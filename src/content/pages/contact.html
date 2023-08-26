@@ -1,0 +1,109 @@
+---
+title: 'Contact'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'contact/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/css/contact.css">
+{% endblock %}
+
+{% block body %}
+
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1106">
+    <div class="cs-container">
+        <span class="cs-int-title">Contact Us</span>
+        <div class="cs-breadcrumbs">
+            <a href="/" class="cs-link">Home</a>
+            <a href="/contact" class="cs-link cs-active">Contact</a>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/int-hero.webp">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/int-hero.webp">
+        <img decoding="async" src="/assets/images/int-hero.webp" alt="worker grouting" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+    <!-- ============================================ -->
+    <!--                Contact Form                  -->
+    <!-- ============================================ -->
+
+    <section id="cs-contact-265">
+        <div class="cs-container">
+            <div class="cs-left-section">
+                <div class="cs-content">
+                    <span class="cs-topper">Contact</span>
+                    <h2 class="cs-title">Send a Message</h2>
+                    <p class="cs-text">
+                        We are ready to take your call or email. Let us know what we can do for you!
+                    </p>
+                </div>
+                <form id="cs-form-265" name="Contact Form" method="post" data-netlify="true"><input type='hidden' name='form-name' value='Contact Form' />
+                    <label>
+                        Name
+                        <input required type="text" id="name-265" name="name" placeholder="Name">
+                    </label>
+                    <label>
+                        Email
+                        <input required type="text" id="email-265" name="email" placeholder="Email">
+                    </label>
+                    <label>
+                        Phone
+                        <input required type="text" id="phone-265" name="phone" placeholder="Phone">
+                    </label>
+                    <label>
+                        Company name
+                        <input type="text" id="find-265" name="company" placeholder="Company name">
+                    </label>
+                    <label class="cs-label-message">
+                        Message
+                        <textarea required name="Message" id="message-265" placeholder="Write message..."></textarea>
+                    </label>
+                    <button class="cs-button-solid cs-submit" type="submit">Submit Message</button>
+                </form>
+            </div>
+            <div class="cs-right-section">
+                <!--Email-->
+                    <span class="cs-header">WhatsApp</span>
+                    <a class="cs-link" href="{{client.whatsapp}}">Contact Us</a>
+                    <span class="cs-header">Email</span>
+                    <a class="cs-link" onclick="generatemailto()" id="contactId" href="">Click to email</a>
+                    <!--Phone-->
+                    <span class="cs-header">Phone</span>
+                    <a class="cs-link" href="tel:{{client.phoneForTel}}">{{client.phoneFormatted}}</a>
+                    <!--Address-->
+                    <span class="cs-header">Address</span>
+                    <a class="cs-link" href="{{client.address.mapLink}}">
+                        {{client.address.lineOne}},
+                        <br />
+                        {{client.address.lineTwo}},
+                        <br />
+                        <span class="cs-block">
+                            {{client.address.city}}
+                            {{client.address.state}}
+                            {{client.address.zip}}
+                        </span>
+                    </a>
+    
+                <!-- Background Image-->
+                <picture class="cs-bg-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/contact.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/contact.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/contact.jpg" alt="building" width="542" height="662" aria-hidden="true">
+                </picture>
+            </div>
+        </div>
+    </section>
+{% endblock %}

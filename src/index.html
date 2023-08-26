@@ -1,0 +1,548 @@
+---
+title: 'Tile Restoration'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/hero.webp'
+permalink: '/'
+eleventyNavigation:
+  key: Home
+  order: 100
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/css/local.css" />
+    <link rel="stylesheet" href="/css/critical.css" />
+
+    <!-- Script for Netlify Identity -->
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script defer>
+        if (window.netlifyIdentity) {
+            window
+                .netlifyIdentity
+                .on('init', (user) => {
+                    if (!user) {
+                        window
+                            .netlifyIdentity
+                            .on('login', () => {
+                                document.location.href = '/admin/';
+                            });
+                    }
+                });
+        }
+    </script>
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                   Hero                       -->
+<!-- ============================================ -->
+
+<section id="hero-288">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">Tile & Grout Restoration Service in Wellington</h1>
+            <p class="cs-text">
+                With transparent pricing, unmatched expertise, and countless satisfied clients, Wellington Tile Restoration stands as the top choice for your tile and grout needs. Our certified professionals are dedicated to reviving and enhancing your spaces with precision and passion.
+            </p>
+            <a href="/contact" class="cs-button-solid">Get An Estimate</a>
+            <ul class="cs-stats-group">
+                <li class="cs-item">
+                    <span class="cs-number">10+</span>
+                    <span class="cs-desc">Years of Expertise</span>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">100's</span>
+                    <span class="cs-desc">Delighted Customers</span>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">5/5</span>
+                    <span class="cs-desc">Google Rating</span>
+                </li>
+            </ul>
+        </div>
+        <!--Hero Image-->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="/assets/images/hero.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/hero.webp">
+            <source media="(min-width: 1024px)" srcset="/assets/images/hero.webp">
+            <img aria-hidden="true" decoding="async" src="/assets/images/hero.webp" alt="lawyer" width="630" height="814">
+        </picture>
+        <!--Green Waves-->
+        <picture class="cs-waves">
+            <source media="(min-width: 1024px)" srcset="/assets/svgs/waves.svg">
+            <source media="(min-width: 601px)" srcset="/assets/svgs/waves-t.svg">
+            <source media="(max-width: 600px)" srcset="/assets/svgs/waves-m.svg">
+            <img decoding="async" src="/assets/svgs/waves.svg" alt="waves" width="645" height="1080" aria-hidden="true">
+        </picture>
+    </div>
+</section>
+
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-296">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Services</span>
+            <h2 class="cs-title">Residential & Commercial Tile & Grout Restoration</h2>
+            <p class="cs-text">
+                Wellington Tile Restoration brings a wide array of tile and grout solutions to both homes and businesses. Our unwavering commitment to top-notch quality, fair pricing, and guaranteed satisfaction defines every service we offer.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a class="cs-link" href="/contact">
+                    <img class="cs-icon" src="/assets/svgs/tile-2.svg" alt="icon" width="" height="" loading="lazy" decoding="async" aria-hidden="true">
+                    <h3 class="cs-h3">Tile Repair</h3>
+                    <p class="cs-item-text">
+                        From minor chips to notable cracks, our proficient team stands ready to address any form of tile damage. We meticulously repair or replace any compromised tiles, ensuring your walls or flooring reflects their original splendor and charm.
+                    </p>
+                </a>
+                <picture class="cs-image"  aria-hidden="true">
+                    <source media="(max-width: 600px)" srcset="/assets/images/hero.webp">
+                    <source media="(min-width: 601px)" srcset="/assets/images/hero.webp">
+                    <img loading="lazy" decoding="async" src="/assets/images/hero.webp" alt="library" width="413" height="266">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/contact" class="cs-link">
+                    <img class="cs-icon" src="/assets/svgs/trowel.svg" alt="icon" width="" height="" loading="lazy" decoding="async" aria-hidden="true">
+                    <h3 class="cs-h3">Tile Regrouting</h3>
+                    <p class="cs-item-text">
+                        Crumbling, stained, or cracked grout? We're on it. Depending on the degree of wear, we can touch-up grout, regrout entire surfaces or specific areas, or provide a perfect colour match to your existing grout for seamless aesthetics.
+                    </p>
+                </a>
+                <picture class="cs-image"  aria-hidden="true">
+                    <source media="(max-width: 600px)" srcset="/assets/images/hero.webp">
+                    <source media="(min-width: 601px)" srcset="/assets/images/hero.webp">
+                    <img loading="lazy" decoding="async" src="/assets/images/hero.webp" alt="library" width="413" height="266">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/contact" class="cs-link">
+                    <img class="cs-icon" src="/assets/svgs/solvent.svg" alt="icon" width="" height="" loading="lazy" decoding="async" aria-hidden="true">
+                    <h3 class="cs-h3">Grout Colouring (Colour Sealing, Staining)</h3>
+                    <p class="cs-item-text">
+                        Transform the visual appeal of your grout with our color sealing technique. Beyond providing a uniform shade, this method also acts as a protective barrier. Ideal for instances of heavy staining, it's a practical alternative to a full re-grouting.
+                    </p>
+                </a>
+                <picture class="cs-image"  aria-hidden="true">
+                    <source media="(max-width: 600px)" srcset="/assets/images/hero.webp">
+                    <source media="(min-width: 601px)" srcset="/assets/images/hero.webp">
+                    <img loading="lazy" decoding="async" src="/assets/images/hero.webp" alt="library" width="413" height="266">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="/contact">
+                    <img class="cs-icon" src="/assets/svgs/cleaning.svg" alt="icon" width="" height="" loading="lazy" decoding="async" aria-hidden="true">
+                    <h3 class="cs-h3">Tile & Grout Cleaning</h3>
+                    <p class="cs-item-text">
+                        Rediscover the original brilliance of your tiles. With our professional cleaning methods, we efficiently eliminate dirt and stains, giving your floors a renewed shine and ensuring they remain protected against future marks.
+                    </p>
+                </a>
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="/assets/images/hero.webp">
+                    <source media="(min-width: 601px)" srcset="/assets/images/hero.webp">
+                    <img loading="lazy" decoding="async" src="/assets/images/hero.webp" alt="library" width="413" height="266" aria-hidden="true">
+                </picture>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+
+<!-- ============================================ -->
+<!--                Why Choose Us                 -->
+<!-- ============================================ -->
+
+<section id="why-choose-223">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Why Choose Us</span>
+            <h2 class="cs-title">A Reliable Contractor You Can Trust</h2>
+            <p class="cs-text">
+                With Wellington Tile Restoration by your side, quality and reliability go hand-in-hand. We proudly uphold a distinguished reputation, showcasing a rich history of tile restoration and regrouting projects throughout Wellington. Trust us for unparalleled tile expertise.
+            </p>
+            <a href="/about" class="cs-button-solid">More About Us</a>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/certified.svg" alt="icon" width="72" height="72">
+                <h3 class="cs-h3">Certified Excellence</h3>
+                <p class="cs-item-text">
+                    Our status as a certified preferred contractor isn't just a title; it's a promise. We maintain the highest standards of workmanship, consistently following industry best practices to deliver optimal tile restoration results every time.
+                </p>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/quotation.svg" alt="icon" width="72" height="72">
+                <h3 class="cs-h3">Transparent Quotations</h3>
+                <p class="cs-item-text">
+                    Budgeting is an integral part of any project. Keeping this in mind, we offer a complimentary quotation service, ensuring every client is aware of costs upfront. It's our way of promoting transparency and cost-efficiency for every service.
+                </p>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/insured.svg" alt="icon" width="72" height="72">
+                <h3 class="cs-h3">Complete Peace of Mind</h3>
+                <p class="cs-item-text">
+                    Rest easy with Wellington Tile Restoration. Our fully insured services ensure that, come what may, both you and your property are safeguarded. It's not just about quality service; it's about ensuring a stress-free experience.
+                </p>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/local.svg" alt="icon" width="72" height="72">
+                <h3 class="cs-h3">A Local Touch</h3>
+                <p class="cs-item-text">
+                    Being a homegrown Wellington enterprise, we are in tune with the specific needs of our community. We're not just another tile restoration service; we're your neighbors, dedicated to offering the best local solutions for all your tile and grout requirements.
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+                                                         
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-317">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="/assets/images/hero.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/hero.webp">
+            <img loading="lazy" decoding="async" src="/assets/images/hero.webp" alt="consult" width="520" height="680" aria-hidden="true">
+        </picture>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">Featured Service</span>
+            <h2 class="cs-title">Tile & Grout Cleaning</h2>
+            <p class="cs-text">
+                In Wellington, renowned for its unique climate, maintaining clean tiled surfaces is a challenge. Moisture and dirt lead to rapid soiling and stickiness. DIY cleaning methods may offer superficial solutions, but Wellington Tile Restorations offers a comprehensive approach. We leverage local insights and international standards, deploying top-tier cleaning techniques that tackle tough stains without damage. 
+            </p>
+            <p class="cs-text">
+                From buffer to steam cleaning, we cater to specific tile needs, ensuring a thorough cleanse. The result? Reduced health risks, enhanced visual appeal, and prolonged tile life. Trust in our expertise to uphold and guarantee the pristine condition of your home's tiles.
+            </p>
+            <div id="button-box-837" class="cs-contact-group">
+                <a class="cs-link" href="tel:555-555-0234">
+                    <picture class="cs-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/phone.svg" alt="icon" width="24" height="24">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-header">Call Now</span>
+                        <span class="cs-link-content">(555) 555-0234</span>
+                    </div>
+                </a>
+                <a class="cs-link" href="mailto:Info@health&wellness.com">
+                    <picture class="cs-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/mail.svg" alt="icon" width="24" height="24">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-header">Send A Message</span>
+                        <span class="cs-link-content">info@email.com</span>
+                    </div>
+                </a>
+            </div>
+            <a class="cs-button-solid" aria-label="learn more about grout cleaning" href="/grout-cleaning">Tile & Grout Cleaning</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-1064">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Additional Services</span>
+            <h2 class="cs-title">Exploring the Breadth of Our Expertise in Wellington</h2>
+            <p class="cs-text">
+                At Wellington Tile Restoration, we pride ourselves on more than just tile and grout restoration. Our wide array of services caters to the distinctive needs of each space in Wellington and its adjoining areas. Whether it's a fresh tile installation or specialized stone restoration, our adept team is poised and ready to make it a reality. Explore our extensive service offerings and see how we can elevate every corner of your property.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/shower.svg" alt="car" width="48" height="48">
+                </picture>
+                <h3 class="cs-h3">Shower Restoration</h3>
+                <p class="cs-item-text">
+                    Dive into our full-suite of shower restoration services. From eradicating soap scum and calcium deposits to expert caulking, grout repairs, and sealant applications, we ensure your shower space is safeguarded against future wear.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/counter.svg" alt="car" width="48" height="48">
+                </picture>
+                <h3 class="cs-h3">Granite Countertop Restoration</h3>
+                <p class="cs-item-text">
+                    Our specialty lies in rejuvenating natural stone granite countertops. We adeptly remove mineral build-up caused by hard water and seal with a water-based impregnator to preserve its innate beauty.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/marble.svg" alt="car" width="48" height="48">
+                </picture>
+                <h3 class="cs-h3">Marble Restoration</h3>
+                <p class="cs-item-text">
+                    Your marble surfaces deserve the finest care. Our team masterfully cleans, repairs, polishes, and seals, bringing out the inherent radiance and sophistication of your marble.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/stone.svg" alt="car" width="48" height="48">
+                </picture>
+                <h3 class="cs-h3">Outdoor Tile and Stone Cleaning</h3>
+                <p class="cs-item-text">
+                    With our rigorous multistep regimen, your natural stone is not just cleaned but preserved, ensuring a lasting defense against water damage and decay.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/pressure.svg" alt="car" width="48" height="48">
+                </picture>
+                <h3 class="cs-h3">Pressure Washing Services</h3>
+                <p class="cs-item-text">
+                    Employing cutting-edge pressure washing techniques, we tackle stubborn dirt, grime, and stains head-on. The result? A rejuvenated outdoor space radiating cleanliness.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/seal.svg" alt="car" width="48" height="48">
+                </picture>
+                <h3 class="cs-h3">Tile Sealants</h3>
+                <p class="cs-item-text">
+                    Our bespoke sealing solutions are tailored to the unique needs of your tiles. From polished protectors for gleaming porcelain to colour intensifiers designed to accentuate the hues of natural stones, we've got you covered.
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="sbsr-318">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="/assets/images/hero.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/hero.webp">
+            <img loading="lazy" decoding="async" src="/assets/images/hero.webp" alt="consult" width="520" height="680" aria-hidden="true">
+        </picture>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">Service 2</span>
+            <h2 class="cs-title">Service to rank for 2</h2>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            </p>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            </p>
+            <div id="button-box-837" class="cs-contact-group">
+                <a class="cs-link" href="tel:555-555-0234">
+                    <picture class="cs-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/phone.svg" alt="icon" width="24" height="24">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-header">Call Now</span>
+                        <span class="cs-link-content">(555) 555-0234</span>
+                    </div>
+                </a>
+                <a class="cs-link" href="mailto:Info@health&wellness.com">
+                    <picture class="cs-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/mail.svg" alt="icon" width="24" height="24">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-header">Send A Message</span>
+                        <span class="cs-link-content">info@email.com</span>
+                    </div>
+                </a>
+            </div>
+            <a class="cs-button-solid" aria-label="learn more about regrouting" href="/restoration">Regrouting</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                     FAQ                      -->
+<!-- ============================================ -->
+
+<section id="faq-708">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/hero.webp">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/hero.webp">
+            <img loading="lazy" decoding="async" src="/assets/images/hero.webp" alt="rocks" width="650" height="740" aria-hidden="true">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">FAQ's</span>
+            <h2 class="cs-title">Frequently Asked Questions</h2>
+            <ul class="cs-faq-group">
+                <!-- Active class added as default -->
+                <li class="cs-faq-item active">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What sets Wellington Tile Restoration apart from other tile restoration services in the area?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Wellington Tile Restoration prides itself on a combination of transparent pricing, unparalleled expertise, and a legacy of satisfied clients. With over a decade of experience in the industry, our certified professionals are committed to delivering top-notch quality and ensuring every project reflects our dedication to excellence.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How does Wellington Tile Restoration ensure a smooth tile restoration process and effective communication?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        At Wellington Tile Restoration, we recognize that the cornerstone of a successful restoration lies in meticulous project management and transparent communication. We've streamlined a process that clearly delineates each step, keeping our clients abreast from initiation to completion. Our dedicated team prioritizes open dialogue throughout, ensuring that every query is addressed and every expectation is seamlessly met.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How do I know if my tiles or stone surfaces need sealing or re-sealing?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Sealing is essential to protect tiles and stone surfaces from stains, wear, and moisture damage. If you notice your tiles or stones are absorbing water, appearing dull, or getting stained easily, it might be time for re-sealing. Our team can provide a thorough assessment and recommend tailored sealing solutions to safeguard your tiles or stones effectively.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Can you handle outdoor tile and stone restoration?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Absolutely! Beyond our indoor services, we offer outdoor tile and stone cleaning that includes a rigorous multi-step process to guarantee the safety and preservation of your natural stone. This ensures protection against water damage, deterioration, and keeps your outdoor spaces looking fresh and well-maintained.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Are the cleaning and restoration products you use safe for my home and the environment?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, at Wellington Tile Restoration, we prioritize the safety of both our clients and the environment. We utilize eco-friendly and non-toxic products that effectively restore and clean tiles without causing harm to the surrounding environment or the inhabitants of the space. Our commitment extends beyond just restoring tiles; we strive for a greener, safer approach in all our services.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Meet The Team                 -->
+<!-- ============================================ -->
+
+<section id="meet-team-1141">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Our Expert Team</span>
+                <h2 class="cs-title">Meet The Wellington Tile Restoration Team </h2>
+            </div>
+            
+            <a href="/about" class="cs-button-solid">Read More About Us</a>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/person-1.webp">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/person-1.webp">
+                    <img loading="lazy" decoding="async" src="/assets/images/person-1.webp" alt="person" width="305" height="407">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Person 1</span>
+                    <span class="cs-job">Founder</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/person-1.webp">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/person-1.webp">
+                    <img loading="lazy" decoding="async" src="/assets/images/person-1.webp" alt="person" width="305" height="407">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Person 1</span>
+                    <span class="cs-job">Founder</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-591">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Testimonials</span>
+            <h2 class="cs-title">Voices of Wellington: Our Client Testimonials</h2>
+            <p class="cs-text">
+                At Wellington Tile Restoration, it's not just about the tiles and grout – it's about the trust and satisfaction of our esteemed clientele. Dive in to hear what our Wellington community has to share about their transformative experiences with us:
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <img class="cs-icon" src="/assets/svgs/quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
+                <h3 class="cs-h3">In-Depth Expertise</h3>
+                <p class="cs-item-text">
+                    Exceptional service and an in-depth understanding of tile restoration. Wellington Tile Restoration tackled our worn-out bathroom tiles and breathed new life into them. I'm thoroughly impressed and won't hesitate to recommend them.
+                </p>
+                <span class="cs-name">Rebecca T, &nbsp Kilbirnie</span>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" src="/assets/svgs/quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
+                <h3 class="cs-h3">Exceptional Craftsmanship</h3>
+                <p class="cs-item-text">
+                    Pleasant, professional, and deeply skilled! Whenever our home or office needs tile-related services, Wellington Tile Restoration is our first call. Their dedication to perfection is evident in the results.
+                </p>
+                <span class="cs-name">J. Murdoch, &nbsp Wellington CBD</span>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" src="/assets/svgs/quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
+                <h3 class="cs-h3">Above and Beyond</h3>
+                <p class="cs-item-text">
+                    Wellington Tile Restoration didn't just fix our damaged kitchen tiles; they transformed the entire space. The attention to detail, cleanliness, and their reasonable pricing makes them stand out. Kudos to Joe and the entire team for their stellar work!
+                </p>
+                <span class="cs-name">Ray Greene, &nbsp Lower Hutt</span>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+                                
+<!-- ============================================ -->
+<!--               FAQ Script                     -->
+<!-- ============================================ -->
+<script>
+    const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+        for (const item of faqItems) {
+            const onClick = () => {
+            item.classList.toggle('active')
+        }
+        item.addEventListener('click', onClick)
+        }
+</script>                         
+                                                        
+
+    {% include 'components/cta.html' %}
+{% endblock %}
