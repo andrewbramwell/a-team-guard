@@ -1,16 +1,16 @@
 {
-	"name": "Wellington Tile Restoration",
-	"email": "help@wellingtontilerestoration.co.nz",
-	"phoneForTel": "555-779-4407",
-	"phoneFormatted": "(555) 779-4407",
-	"whatsapp": "https://wa.me/+642108074677",
+	"name": "A Team Guard",
+	"email": "info@ateamguard.co.th",
+	"phoneForTel": "+6621031827",
+	"phoneFormatted": "02-103-1827",
+	"whatsapp": "https://wa.me/+642",
 	"address": {
-		"lineOne": "First Address Line",
-		"lineTwo": "Second Address Line",
-		"city": "Wellington",
-		"state": "NZ",
-		"zip": "80206",
-		"mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
+		"lineOne": "150/78 หมุ่ 2 ",
+		"lineTwo": "ตำบลบางเขน",
+		"city": "อำเภอเมือง",
+		"state": "นนทบุรี",
+		"zip": "11000",
+		"mapLink": "https://goo.gl/maps/"
 	},
-	"domain": "wellingtontilerestorations.co.nz"
+	"domain": "ateamguard.co.th"
 }

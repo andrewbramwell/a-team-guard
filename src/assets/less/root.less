@@ -8,9 +8,9 @@
 @media only screen and (min-width: 0em) {
     // Website colors
 	:root {
-		--primary: #91423A;
-		--primaryLight: #C58135;
-		--secondary: #B25F45;
+		--primary: #8C201E;
+		--primaryLight: #AB8756;
+		--secondary: #191919;
 		--secondaryLight: #595781;
 		--headerColor: #1a1a1a;
 		--bodyTextColor: #4e4b66;
@@ -96,7 +96,7 @@
 			top: 0;
 			left: 0;
 			z-index: -1;
-			background-color: #C58135;
+			background-color: var(--primaryLight);
             
 			//Transition properties
 			width: 0;
@@ -105,41 +105,41 @@
 	}
 }
 
-/* Fonts and general styles */
-@media only screen and (min-width: 0em) {
-    // Grab your fonts to locally host from https://google-webfonts-helper.herokuapp.com/fonts
+    /* Fonts and general styles */
+    @media only screen and (min-width: 0em) {
+        // Grab your fonts to locally host from https://google-webfonts-helper.herokuapp.com/fonts
 
-	/* roboto-regular - latin */
-	@font-face {
-		font-family: 'Roboto';
-		font-style: normal;
-		font-weight: 400;
-		src: local(''), url('/assets/fonts/roboto-v29-latin-regular.woff2') format('woff2'),
-			/* Chrome 26+, Opera 23+, Firefox 39+ */ url('/assets/fonts/roboto-v29-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-	}
-	/* roboto-700 - latin */
-	@font-face {
-		font-family: 'Roboto';
-		font-style: normal;
-		font-weight: 700;
-		src: local(''), url('/assets/fonts/roboto-v29-latin-700.woff2') format('woff2'),
-			/* Chrome 26+, Opera 23+, Firefox 39+ */ url('/assets/fonts/roboto-v29-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-	}
-	/* roboto-900 - latin */
-	@font-face {
-		font-family: 'Roboto';
-		font-style: normal;
-		font-weight: 900;
-		src: local(''), url('/assets/fonts/roboto-v29-latin-900.woff2') format('woff2'),
-			/* Chrome 26+, Opera 23+, Firefox 39+ */ url('/assets/fonts/roboto-v29-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-	}
+    /* sarabun-regular - latin_thai */
+    @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Sarabun';
+        font-style: normal;
+        font-weight: 400;
+        src: url('/assets/fonts/sarabun-v13-latin_thai-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+    /* sarabun-600 - latin_thai */
+    @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Sarabun';
+        font-style: normal;
+        font-weight: 600;
+        src: url('/assets/fonts/sarabun-v13-latin_thai-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+    /* sarabun-800 - latin_thai */
+    @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Sarabun';
+        font-style: normal;
+        font-weight: 800;
+        src: url('/assets/fonts/sarabun-v13-latin_thai-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
 
 	body,
 	html {
 		margin: 0;
 		padding: 0;
 		font-size: 100%;
-		font-family: 'Roboto', Arial, sans-serif;
+		font-family: 'Sarabun', Arial, sans-serif;
 		color: var(--bodyTextColor);
 		overflow-x: hidden;
 	}
@@ -358,7 +358,7 @@
             box-sizing: border-box;
             display: flex;
             justify-content: center;
-            background-color: #FAF9F6;
+            background-color: #F7F7F7;
             align-items: center;
             position: absolute;
             top: 0;
@@ -672,9 +672,9 @@
 
             .cs-logo {
                 background-color: var(--primary);
-                img { 
+                /*img { 
                     filter: grayscale(1) brightness(1000%);
-                }
+                }*/
             }
 
             .cs-icon {
@@ -942,7 +942,7 @@
 @media only screen and (min-width: 64rem) {
     #cs-navigation {
         /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-        font-family: 'Roboto', 'Arial', sans-serif;
+        font-family: 'Sarabun', 'Arial', sans-serif;
         width: 100%;
         padding: (16/16rem) (16/16rem) 0 (16/16rem);
         /* prevents padding from affecting height and width */
@@ -982,7 +982,7 @@
             height: 100%;
             /* 32px - 48px */
             padding: (16/16rem) clamp(2rem, 3vw, 3rem);
-            background-color: #FAF9F6;
+            background-color: #F7F7F7;
             /* prevents padding from affecting height and width */
             box-sizing: border-box;
             display: flex;
@@ -1063,7 +1063,7 @@
             width: (48/16rem);
             height: (48/16rem);
             margin-right: (16/16rem);
-            background-color: #FAF9F6;
+            background-color: #F7F7F7;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1210,7 +1210,7 @@
                 top: 0;
                 left: 0;
                 z-index: -1;
-                background-color: #C58135;
+                background-color: var(--primaryLight);
                 
                 //Transition properties
                 width: 0;
@@ -1238,9 +1238,9 @@
 
             .cs-logo {
                 background-color: var(--primary);
-                img { 
+                /*img { 
                     filter: grayscale(1) brightness(1000%);
-                }
+                }*/
             }
 
             
@@ -1282,7 +1282,7 @@
 @media only screen and (min-width: 0rem) {
 
     #banner-1106 {
-        font-family: 'Roboto', 'Arial', sans-serif;
+        font-family: 'Sarabun', 'Arial', sans-serif;
         padding: var(--sectionPadding);
         padding-top: clamp(13.81875rem, 25vw, 18.975rem);
         padding-bottom: (120/16rem);
@@ -1860,7 +1860,7 @@
             content: '';
             width: (48/16rem);
             height: (48/16rem);
-            background: #FAF9F6;
+            background: #F7F7F7;
             border-radius: (24/16rem);
             opacity: 1;
             position: absolute;

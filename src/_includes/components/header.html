@@ -29,11 +29,11 @@
         </li>
         <li class="cs-item cs-remove">
             <picture class="cs-picture">
-                <img class="cs-icon" src="/assets/svgs/whatsapp.svg" alt="icon" width="24" height="24" aria-hidden="true" decoding="async">
+                <img class="cs-icon" src="/assets/svgs/line.svg" alt="icon" width="24" height="24" aria-hidden="true" decoding="async">
             </picture>
             <div class="cs-flex">
-                <span class="cs-header">WhatsApp</span>
-                <a href="{{client.whatsapp}}" class="cs-link">Click to contact</a>
+                <span class="cs-header">LINE</span>
+                <a href="{{client.whatsapp}}" class="cs-link">Add friend</a>
             </div>
         </li>
     </ul>
@@ -64,17 +64,25 @@
                     <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
                     <li class="cs-li cs-dropdown" tabindex="0">
                         <span class="cs-li-link"
-                           "{{ 'cs-active' if 'grout-cleaning' == page.fileSlug }}
-                            {{ 'cs-active' if 'regrouting' == page.fileSlug }}">
+                           "{{ 'cs-active' if 'residential-security' == page.fileSlug }}
+                            {{ 'cs-active' if 'retail-security' == page.fileSlug }}
+                            {{ 'cs-active' if 'warehouse-security' == page.fileSlug }}
+                            {{ 'cs-active' if 'personal-security' == page.fileSlug }}">
                             SERVICES
                             <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
                         </span>
                         <ul class="cs-drop-ul">
                             <li class="cs-drop-li">
-                                <a href="/grout-cleaning" class="cs-li-link cs-drop-link">Grout Cleaning</a>
+                                <a href="/residential-security" class="cs-li-link cs-drop-link">Residential Security</a>
                             </li>
                             <li class="cs-drop-li">
-                                <a href="/regrouting" class="cs-li-link cs-drop-link">Regrouting</a>
+                                <a href="/retail-security" class="cs-li-link cs-drop-link">Retail Security</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/warehouse-security" class="cs-li-link cs-drop-link">Warehouse Security</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/personal-security" class="cs-li-link cs-drop-link">Personal Security</a>
                             </li>
                         </ul>
                     </li>
