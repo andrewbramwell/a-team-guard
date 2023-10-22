@@ -1,6 +1,6 @@
 ---
 title: 'ติดต่อ'
-description: 'Meta description for the page'
+description: 'ติดต่อ A Team Guard สำหรับความปลอดภัยที่มั่นคง! ส่งข้อความหรือโทรศัพท์ถึงเราเพื่อแจ้งความต้องการของคุณ ทีมงานผู้เชี่ยวชาญของเราพร้อมที่จะช่วยเหลือคุณทันที'
 preloadImg: '/assets/images/int-hero.webp'
 permalink: 'contact/'
 eleventyNavigation:
@@ -85,6 +85,9 @@ eleventyNavigation:
                     <!--Phone-->
                     <span class="cs-header">โทรศัพท์</span>
                     <a class="cs-link" href="tel:{{client.phoneForTel}}">{{client.phoneFormatted}}</a>
+                    <!--Mobile-->
+                    <span class="cs-header">มือถือ</span>
+                    <a class="cs-link" href="tel:{{client.phoneForMobile}}">{{client.mobileFormatted}}</a>
                     <!--Address-->
                     <span class="cs-header">ที่อยู่</span>
                     <a class="cs-link" href="{{client.address.mapLink}}">

@@ -3,13 +3,15 @@
 	"email": "info@ateamguard.co.th",
 	"phoneForTel": "+6621031827",
 	"phoneFormatted": "02-103-1827",
+	"phoneForMobile": "+66626317888",
+	"mobileFormatted": "062-631-7888",
 	"whatsapp": "https://wa.me/+642",
 	"address": {
-		"lineOne": "150/78 หมู่ 2 ",
-		"lineTwo": "ตำบลบางเขน",
-		"city": "อำเภอเมือง",
+		"lineOne": "111/276 ซอยแจ้งวัฒนะ-ปากเกร็ด 19",
+		"lineTwo": "ถนนแจ้งวัฒนะ ตำบลบางพูด",
+		"city": "ปากเกร็ด",
 		"state": "นนทบุรี",
-		"zip": "11000",
+		"zip": "11120",
 		"mapLink": "https://goo.gl/maps/"
 	},
 	"domain": "ateamguard.co.th"
