@@ -42,7 +42,15 @@
     <script defer src="/assets/js/dark.js"></script>
 
     {% block head %}{% endblock %}
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F3LEFX4KHV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'G-F3LEFX4KHV');
+    </script>
     <title>
       {% if page.url == '/'%}
         {{ title }}
